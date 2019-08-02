@@ -1,0 +1,87 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="StaffMast.master.cs" Inherits="FWP___Pet_Adoption_Subsystem.StaffMast" %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 609px;
+        }
+        .style2
+        {
+            width: 470px;
+        }
+    </style>
+</head>
+<body>
+    <form id="Form1" runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="loginDisplay" align="left" 
+                
+                style="font-family: Arial; font-size: medium; font-weight: bolder; font-style: italic; color: #003366">
+                <table style="width:100%;">
+                    <tr>
+                        <td align="left" class="style1" rowspan="2" 
+                            style="font-size: x-large; font-weight: bolder; background-color: #003366; color: #FFFFFF;">
+                            FWP - Pet Adoption SubSystem</td>
+                        <td class="style2">
+                            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                        </td>
+                        <td rowspan="3">
+                <asp:Image ID="ImageLogo" runat="server" Height="60px" 
+                    ImageUrl="~/Images/viewlogo.caspx.png" style="margin-top: 0px" Width="114px" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="style2">
+                            <asp:LinkButton ID="LinkButton1" runat="server" onclick="LinkButton1_Click">Log Out</asp:LinkButton>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="style1">
+                            &nbsp;</td>
+                        <td class="style2">
+                            &nbsp;</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" 
+                    EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal" 
+                    BackColor="#0066CC">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home"/>
+                        <asp:MenuItem NavigateUrl="~/Staff_Log_In.aspx" Text="Staff Log In" 
+                            Value="LogIn"/>
+                        <asp:MenuItem NavigateUrl="~/View Pet.aspx" Text="View Pets" Value="View Pets">
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Hall_of_Fame.aspx" Text="Pets` best friends" 
+                            Value="HallOfFame"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/View_Adoptions.aspx" Text="View Adoptions" 
+                            Value="sAdoptions"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/E_Pets_Info.aspx" Text="Endangered Pets Info" 
+                            Value="Endangered Pets Info"></asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+    </form>
+</body>
+</html>
