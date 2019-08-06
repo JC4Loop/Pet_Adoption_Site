@@ -6,14 +6,14 @@ Page shows a table of all pets in the database.
 User can use a dropdown list to change the order of representation by each attribute.
 The name of the pet is a clickable link to proceed to 'Adopt Pet' page.
 
-![screenshot](/screenshots/ViewPetSS.png)
+![screenshot](/screenshots/ViewPetsSS.png)
 
 #### Adopt Pet
 Displays all details of selected pet.
 User can enter their information, validation provided.
 Once user has entered their details and selected 'continue to purchase' they are redirected to the 'Adoption Desposit' page
 
-![screenshot](/screenshots/AdoptPetsSS.png)
+![screenshot](/screenshots/AdoptPetSS.png)
 
 #### Adoption Deposit
 Users input details are show along with details of Pet.
@@ -23,7 +23,7 @@ Amout can be in british pounds, euros or romanian leu. If euros or leu is select
 If the minimum amount is met, the 'Complete Order' button will save date to the database, creating the adoption.
 The user is redirected to the 'Confirm Page' which will show a message that either the adoption has been successfully completed or if there has been a problem saving the pet or customer details to the database.
 
-![screenshot](/screenshots/AdoptionDeposit.png)
+![screenshot](/screenshots/AdoptionDepositSS.png)
 
 #### Hall of Fame
 Shows all the adoptions where the deposit was more than the minimum required.
